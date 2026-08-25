@@ -49,17 +49,17 @@ df = pd.DataFrame({
 })
 st.dataframe(df)
 
-#Interactive widget: button
-if st.button("Isla Northa.com"):
-    st.link_button("Here is the link to Isla Northa.com", "https://islanortha.com")
-    st.success("Taking you to Isla Northa.com!")
+# Links
+st.subheader("Links")
+STREAMLIT_APP_URL = "https://isla-northa-app-j4mue7kjwk5rscctd7cunc.streamlit.app"
+st.link_button("Isla Northa website", "https://islanortha.com")
+st.link_button("Open this Streamlit app", STREAMLIT_APP_URL)
 
 # Vote: Isla Northa vs The Isle
 st.subheader("Which is better?")
 st.write("Vote for your favourite dinosaur game on the official page:")
 
-# Put your real website/form URL here when you have one
-VOTE_SITE_URL = "https://forms.gle/YOUR_FORM_ID"
+VOTE_SITE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfExMRSUYEYhXTcqv2XV0kTY7VcyIS6I3ow1_OWpSAyzyb7Rg/viewform?usp=header"
 st.link_button("Open official vote page", VOTE_SITE_URL)
 
 #add a footer
