@@ -59,7 +59,7 @@ st.link_button("Open this Streamlit app", STREAMLIT_APP_URL)
 st.subheader("Which is better?")
 st.write("Vote for your favourite dinosaur game on the official page:")
 
-VOTE_SITE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfExMRSUYEYhXTcqv2XV0kTY7VcyIS6I3ow1_OWpSAyzyb7Rg/viewform?usp=header"
+VOTE_SITE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfExMRSUYEYhXTcqv2XV0kTY7VcyIS6I3ow1_OWpSAyzyb7Rg/viewform?usp=publish-editor"
 st.link_button("Open official vote page", VOTE_SITE_URL)
 
 #add a footer
