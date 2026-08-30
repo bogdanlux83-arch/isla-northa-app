@@ -8,7 +8,7 @@ st.title("My First Streamlit App")
 st.header("IslaNortha")
 
 #add a text
-st.write("possible i could do something here.... this is gonna be my first ever apps and then connect it to my custom dinosaur game isla northa, first ever one to be honest. other than POT(Path of Titans), but u may be abled to navigate through the app as it were any other existing app. Isla northa is a custom dinosaur game that i am working on and i am gonna connect it to this app. This app will be abled to take you to the isla northa website to then purchase or view the website of IslaNortha.com. --------")
+st.write("possible i could do something here.... this is gonna be my first ever apps and then connect it to my custom dinosaur game isla northa, first ever one to be honest. other than POT(Path of Titans), but u may be abled to navigate through the app as it were any other existing app. Isla northa is a custom dinosaur game that i am working on and i am gonna connect it to this app. This app will be abled to take you to the isla northa website to then purchase the game, download, or to then view the website of IslaNortha.com. --------")
 st.write("I  S  L  A  N  O  R  T  H  A")
 st.write("█  ▀  █  █▄█ █▄█ █▄█ █▀▄  █  █▀█ █▄█")
 st.write("█ ▄▄  █▄ █ █ █ ▀ █▄█ █ █  █  █ █ █ █")
