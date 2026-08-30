@@ -64,6 +64,13 @@ st.link_button("Open official vote page", VOTE_SITE_URL)
 
 #add a footer
 st.markdown(
-    "<div style='text-align:center; color:gray;'>copyright 2026 Isla Northa. All rights reserved.</div>",
+    """
+    <div style='text-align:center; color:gray;'>
+      Copyright 2026 Isla Northa. All rights reserved.<br>
+      <a href="https://islanortha.com/terms" target="_blank">Terms of Service</a> ·
+      <a href="https://islanortha.com/privacy" target="_blank">Privacy Policy</a> ·
+      <a href="https://islanortha.com/cookies" target="_blank">Cookie Policy</a>
+    </div>
+    """,
     unsafe_allow_html=True,
 )
