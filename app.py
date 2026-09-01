@@ -36,18 +36,12 @@ if st.button("Login"):
 user_input = st.text_input("Enter your name")
 st.write(f"Hello, **{user_input}**!")
 
+#Play With The Slider
+st.write("Play With The Slider If Your Bored.")
 #Interactive widget: slider
 num = st.slider("Select a number from 1 to 10", 1, 10, 5)
 st.write(f"The square of **{num}** is **{num**2}**")
 
-#Display a dataframe
-st.subheader("Sample DataFrame")
-df = pd.DataFrame({
-    'col1': [1, 2, 3, 4, 5],
-    'col2': [10, 20, 30, 40, 50]
-    
-})
-st.dataframe(df)
 
 # Links
 st.subheader("Links")
