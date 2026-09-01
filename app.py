@@ -37,7 +37,14 @@ user_input = st.text_input("Enter your name")
 st.write(f"Hello, **{user_input}**!")
 
 #Play With The Slider
-st.write("Play With The Slider If Your Bored.")
+gradient_html = """
+<span style="background: linear-gradient(90deg, #FF4B4B, #24963F); 
+             color: white; padding: 4px 12px; font-weight: bold; border-radius: 4px;">
+    Play With The Slider If Your Bored.
+</span>
+"""
+st.markdown(gradient_html, unsafe_allow_html=True)
+
 #Interactive widget: slider
 num = st.slider("Select a number from 1 to 10", 1, 10, 5)
 st.write(f"The square of **{num}** is **{num**2}**")
