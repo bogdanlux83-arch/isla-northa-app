@@ -24,10 +24,12 @@ gradient_html = """
 st.markdown(gradient_html, unsafe_allow_html=True)
 
 #add your credentials here
+#For Demo purposes we will not use a database, we will use a dictionary in the session state.
+st.write("For Demo purposes we will not Store your Credentials.")
 if "users" not in st.session_state:
     #demo
     st.session_state.users = {"admin": "admin"}
-if "logged_in" not in st.session_state:
+if "logged_in_user" not in st.session_state:
     st.session_state.logged_in_user = None
 
 tab_login, tab_signup = st.tabs(["Login", "Signup"])
