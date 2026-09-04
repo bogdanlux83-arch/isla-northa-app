@@ -25,6 +25,14 @@ st.markdown(gradient_html, unsafe_allow_html=True)
 
 #add your credentials here
 #For Demo purposes we will not use a database, we will use a dictionary in the session state.
+
+gradient_html = """
+<span style="background: linear-gradient(90deg, #06B6D4, #3B82F6); 
+             color: white; padding: 4px 12px; font-weight: bold; border-radius: 4px;">
+    (Important)
+</span>
+"""
+
 st.write("For Demo purposes we will not Store your Credentials For Your Own Security.")
 if "users" not in st.session_state:
     #demo
