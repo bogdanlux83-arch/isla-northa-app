@@ -35,7 +35,7 @@ gradient_html = """
 
 st.markdown(gradient_html, unsafe_allow_html=True)
 
-st.write("For Demo purposes we will not Store your Credentials For Your Own Security.")
+st.write("For Demo purposes we will not Store your Credentials For Your Own Security, but we will use a dictionary in the session state(Where are right now).")
 if "users" not in st.session_state:
     #demo
     st.session_state.users = {"admin": "admin"}
