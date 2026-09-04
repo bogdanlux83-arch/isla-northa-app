@@ -47,7 +47,7 @@ with tab_login:
 with tab_signup:
     signup_username = st.text_input("Username", key="signup_username")
     signup_password = st.text_input("Password", type="password", key="signup_password")
-    if st.button("Create Account")
+    if st.button("Create Account"):
         if not new_user or not new_password:
             st.warning("Please enter a username and password")
         elif new_user in st.session_state_users:
