@@ -58,16 +58,16 @@ with tab_signup:
     signup_username = st.text_input("Username", key="signup_username")
     signup_password = st.text_input("Password", type="password", key="signup_password")
     if st.button("Create Account"):
-        if not new_user or not new_password:
+        if not signup_username or not signup_password:
             st.warning("Please enter a username and password")
-        elif new_user in st.session_state_users:
+        elif signup_username in st.session_state.users:
             st.error("Username already exists")
         else:
-            st.session_state.users[new_user] = new_password
-            st.success(f"Account created succesfully for {new_user}!")
+            st.session_state.users[signup_username] = signup_password
+            st.success(f"Account created successfully for {signup_username}!")
 
 if st.session_state.logged_in_user:
-    st.write(f"Logged in as **{sg.session_state.logged_in_user}**")
+    st.write(f"Logged in as **{st.session_state.logged_in_user}**")
 
 #Interactive widget: text input
 user_input = st.text_input("Enter your name")
