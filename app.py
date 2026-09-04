@@ -33,6 +33,8 @@ gradient_html = """
 </span>
 """
 
+st.markdown(gradient_html, unsafe_allow_html=True)
+
 st.write("For Demo purposes we will not Store your Credentials For Your Own Security.")
 if "users" not in st.session_state:
     #demo
