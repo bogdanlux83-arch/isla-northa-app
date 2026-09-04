@@ -37,7 +37,7 @@ tab_login, tab_signup = st.tabs(["Login", "Signup"])
 with tab_login:
     login_username = st.text_input("Username", key="login_username")
     login_password = st.text_input("Password", type="password", key="login_password")
-    if st.button("Login")
+    if st.button("Login"):
         if login_username in st.session_state.users and st.session_state.users[login_username] == login_password:
             st.session_state.logged_in_user = login_username
             st.success(f"Welcome back, {login_username}!")
