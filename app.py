@@ -24,13 +24,38 @@ gradient_html = """
 st.markdown(gradient_html, unsafe_allow_html=True)
 
 #add your credentials here
-username = st.text_input("Enter your username")
-password = st.text_input("Enter your password", type="password")
-if st.button("Login"):
-    if username == "admin" and password == "admin":
-        st.success("Login successful")
-    else:
-        st.error("Invalid username or password")
+if "users" not in st.session_state:
+    #demo
+    st.session_state.users = {"admin": "admin"}
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in_user = None
+
+tab_login, tab_signup = st.tabs(["Login", "Signup"])
+
+with tab_login:
+    login_username = st.text_input("Username", key="login_username")
+    login_password = st.text_input("Password", type="password", key="login_password")
+    if st.button("Login")
+        if login_username in st.session_state.users and st.session_state.users[login_username] == login_password:
+            st.session_state.logged_in_user = login_username
+            st.success(f"Welcome back, {login_username}!")
+        else:
+            st.error("Invalid username or password")
+
+with tab_signup:
+    signup_username = st.text_input("Username", key="signup_username")
+    signup_password = st.text_input("Password", type="password", key="signup_password")
+    if st.button("Create Account")
+        if not new_user or not new_password:
+            st.warning("Please enter a username and password")
+        elif new_user in st.session_state_users:
+            st.error("Username already exists")
+        else:
+            st.session_state.users[new_user] = new_password
+            st.success(f"Account created succesfully for {new_user}!")
+
+if st.session_state.logged_in_user:
+    st.write(f"Logged in as **{sg.session_state.logged_in_user}**")
 
 #Interactive widget: text input
 user_input = st.text_input("Enter your name")
