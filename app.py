@@ -29,7 +29,7 @@ st.markdown(gradient_html, unsafe_allow_html=True)
 gradient_html = """
 <span style="background: linear-gradient(90deg, #06B6D4, #3B82F6); 
              color: white; padding: 4px 12px; font-weight: bold; border-radius: 4px;">
-    (Important)
+    Important
 </span>
 """
 
