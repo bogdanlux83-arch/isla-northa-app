@@ -35,7 +35,7 @@ gradient_html = """
 
 st.markdown(gradient_html, unsafe_allow_html=True)
 
-st.write("For Demo purposes we will not Store your Credentials For Your Own Security, but we will use a dictionary in the session state(Where are right now).")
+st.write("For Demo purposes we will not Store your Credentials For Your Own Security, but we will use a dictionary in the session state(Where are right now). So when u close or shut down the app, your credentials will be permanently lost, untill you create a new account again. We will use an actual database when we have a real working game to connect to this website.")
 if "users" not in st.session_state:
     #demo
     st.session_state.users = {"admin": "admin"}
